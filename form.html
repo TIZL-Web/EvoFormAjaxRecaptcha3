@@ -1,0 +1,47 @@
+<div class="form-main">
+    <form id="contact-form" class="form" method="post">
+        <div class="row">
+            <div class="col-lg-6 col-12">
+                <div class="form-group">
+                    <input name="name" type="text" placeholder="Ваше ім'я" minlength="2" maxlength="25" required>
+                </div>
+            </div>
+            <div class="col-lg-6 col-12">
+                <div class="form-group">
+                    <input name="subject" type="text" placeholder="Тема" minlength="2" maxlength="50" required>
+                </div>
+            </div>
+            <div class="col-lg-6 col-12">
+                <div class="form-group">
+                    <input name="email" type="email" placeholder="Ел. пошта" required>
+                </div>
+            </div>
+            <div class="col-lg-6 col-12">
+                <div class="form-group">
+                    <input name="phone" type="text" placeholder="Телефон" minlength="5" maxlength="15"
+                           required>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="form-group message">
+                    <textarea name="message" placeholder="Напишіть ваше повідомлення" minlength="2"
+                              maxlength="1000" required></textarea>
+                </div>
+            </div>
+            <div class="col-lg-6 col-12">
+                <input type="hidden" name="recaptcha_response" id="recaptchaResponse">
+                <div class="form-group button">
+                    <button type="submit" class="btn ">Надіслати</button>
+                </div>
+            </div>
+            <div class="col-lg-6 col-12">
+                <!-- A hidden div “alert” below to display the message received from server once form is submitted-->
+                <div id="alert"></div>
+                <p class="google-message">Захищено з reCAPTCHA та Google<br>
+                    <a href="https://policies.google.com/privacy" rel="nofollow">Privacy Policy</a>,
+                    <a href="https://policies.google.com/terms" rel="nofollow">Terms of Service</a>.
+                </p>
+            </div>
+        </div>
+    </form>
+</div>

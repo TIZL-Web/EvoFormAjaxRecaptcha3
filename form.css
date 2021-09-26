@@ -1,0 +1,9 @@
+.grecaptcha-badge {
+    visibility: hidden;
+}
+.google-message, .google-message a {
+    color: #d6d6d6;
+}
+.google-message a:hover {
+    color: #024dbc;
+}
