@@ -65,7 +65,7 @@ $success_output = '';
 if(isValid()) {
     // Build POST request to get the reCAPTCHA v3 score from Google
     $recaptcha_url = 'https://www.google.com/recaptcha/api/siteverify';
-    $recaptcha_secret = 'YOUR_recaptcha3_PUBLIC_KEY'; // Insert your secret key here
+    $recaptcha_secret = 'YOUR_recaptcha3_SECRET_KEY'; // Insert your secret key here
     $recaptcha_response = $_POST['recaptcha_response'];
 
     // Make the POST request
